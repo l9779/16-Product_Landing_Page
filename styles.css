@@ -1,0 +1,252 @@
+:root {
+    --background-color: #eee;
+    --ascent-color: rgb(241, 131, 28);
+    --button-color: rgb(241, 184, 28);
+    --bar-color: #c5c5c5;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 70px;
+}
+
+a, a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+#pricing div button:hover, #form #submit:hover { 
+    cursor: pointer;
+    background-color: var(--ascent-color);
+}
+
+#pricing div button, #form #submit {
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 150px;
+    padding: 6px;
+    background-color: var(--button-color);
+    border: none;
+}
+
+/* HEADER */
+
+#header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#header > img {
+    max-width: 275px;
+}
+
+#header > #nav-bar {
+    font-weight: 400;
+    min-width: 40vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+/************/
+/*  FORM  */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    gap: 15px;
+}
+
+#form h1 {
+    font-size: 24px;
+}
+
+#form #email {
+    font-size: 16px;
+    min-width: 300px;
+    padding: 4px;
+    background-color: #fff;
+    border: solid rgb(151, 151, 151) 1px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#form input:focus {
+    box-shadow: 0 0 2px 2px #96dde2;
+    border: solid #0aa4af 2px;
+}
+
+#form #submit {
+    font-weight: 900;
+}
+
+/************/
+/* FEATURES */
+
+#features {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    padding: 40px;
+}
+
+#features div {
+    display: grid;
+    grid-template-columns: .1fr  1fr;
+    grid-template-areas: 
+    'image h1'
+    'image p';
+    gap: 0 40px;
+    max-width: 800px;
+}
+
+#features div i {
+    grid-area: image;
+    color: var(--ascent-color);
+    align-self: center;
+    justify-self: center;
+    min-width: 60px;
+}
+
+#features div h1, #features div p  {
+    grid-area: h1;
+}
+
+#features div p {
+    grid-area: p;
+}
+
+/************/
+/* VIDEO */
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+/************/
+/* PRICING */
+
+#pricing {
+    max-width: 1000px;
+    display: flex;
+    margin: 50px auto;
+    gap: 0 20px;
+    justify-content: space-between;
+}
+
+#pricing div {
+    border: solid #000 1px;
+    padding-bottom: 10px;
+    min-width: 300px;
+    text-align: center;
+}
+
+#pricing div h2 {
+    background-color: var(--bar-color);
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+#pricing div h1, #pricing div button {
+    margin: 20px 0;
+}
+
+#pricing div p {
+    line-height: 25px;
+}
+
+#pricing div button {
+    font-weight: 400;
+}
+
+/************/
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: var(--bar-color);
+    padding: 20px 0;
+    text-align: right;
+}
+
+footer a, footer p {
+    margin: 0 10px;
+    background-color: var(--bar-color);
+}
+
+footer p {
+    color: #5c5c5c;
+}
+
+/************/
+
+@media screen and (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding-top: 120px;
+    }
+
+    #header > #nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #features {
+        padding-top: 0;
+        gap: 10px;
+    }
+
+    #features div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #features div i {
+        visibility: hidden;
+    }
+}

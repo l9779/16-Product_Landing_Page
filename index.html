@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id="header-img" alt="store logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#video">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form" method="post">
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+        <input id="submit" type="submit" value="Get Started">
+    </form>
+
+    <section id="features">
+        <div>
+            <i class="fas fa-3x fa-fire" aria-hidden="true"></i>
+            <h1>Premium Materials</h1>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+        <div>
+            <i class='fas fa-3x fa-truck' aria-hidden="true"></i>
+            <h1>Fast Shipping</h1>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+        <div>
+            <i class='fas fa-3x fa-battery-full' aria-hidden="true"></i>
+            <h1>Quality Assurance</h1>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+    </section>
+
+    <section class="video">
+        <iframe id="video" width="533" height="300" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+
+        <div>
+            <h2>tenor trombone</h2>
+            <h1>$600</h1>
+            <p>
+                lorem ipsum. <br>
+                lorem ipsum. <br>
+                lorem ipsum coisa. <br>
+                lorem ipsum.
+            </p>
+            <button>select</button>
+        </div>
+
+        <div>
+            <h2>bass trombone</h2>
+            <h1>$900</h1>
+            <p>
+                lorem ipsum. <br>
+                lorem ipsum. <br>
+                lorem ipsum coisa. <br>
+                lorem ipsum.
+            </p>
+            <button>select</button>
+        </div>
+
+        <div>
+            <h2>valve trombone</h2>
+            <h1>$1200</h1>
+            <p>
+                Plays similar to a Trumpet <br>
+                Great for Jazz Bands <br>
+                lorem ipsum coisa. <br>
+                lorem ipsum.
+            </p>
+            <button>select</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+        <p>Copyright 2016, Original Trombones</p>
+    </footer>
+</body>
+</html>
